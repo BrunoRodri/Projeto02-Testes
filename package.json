@@ -1,0 +1,17 @@
+{
+  "name": "projeto-02",
+  "version": "1.0.0",
+  "description": "Projeto-02 de Testes",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "keywords": [
+    "testes"
+  ],
+  "author": "Bruno",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^13.16.1"
+  }
+}
