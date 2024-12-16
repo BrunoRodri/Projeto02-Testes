@@ -4,7 +4,7 @@ describe('Teste de Pesquisa de Produtos', () => {
   });
 
   it("TC01 - Pesquisar produto existente", () => {
-    const product = "Blue Top";
+    
 
     cy.get('[href="/products"]').click();
     cy.get(".title").should('contain', 'All Products');
