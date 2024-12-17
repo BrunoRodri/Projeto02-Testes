@@ -6,7 +6,7 @@ describe('Teste de Registro de Usuario', () => {
   it("TC01 - Registrar Usuario com sucesso", () => {
     const firstName = "Bruno";
     const lastName = "Rodrigues";
-    const email = "fidbruno@gmail.com";
+    const email = "fidbruno@hotmail.com";
     const password = "password";
     const address = "Rua Silvino Chaves";
 
