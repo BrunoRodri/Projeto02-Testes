@@ -15,12 +15,15 @@ describe('Teste de Adição de Itens ao Carrinho', () => {
   })
 
 
-  it("TC02 - Adicionar Produto ao Carrinho diretamente pela tela Inicial", () => {
-
-    cy.get('.product-overlay [data-product-id="1"]').click({force:true});
+  it("TC02 - Agregar itens adicionados ao carrinho iguais", () => {
+    
+    cy.get('[href="/product_details/1"]').click();
+    cy.get("h2").should('contain', 'Blue Top');
+    cy.get('button[type="button"]').click();
+    cy.get('.close-modal').click();
+    cy.get('button[type="button"]').click();
     cy.get('.modal [href="/view_cart"]').click();
     cy.get(".cart_description").should('contain', "Blue Top");
-    cy.get(".disabled").should('contain', "1");
-
+    cy.get(".disabled").should('contain', "2");
   })
 })
